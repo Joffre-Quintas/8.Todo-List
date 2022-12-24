@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --FontDefault: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:var(--FontDefault);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    background-color: #ffffff70;
+    max-width: 50vw;
+    min-width: 400px;
+    max-height: 70vh;
+    min-height: 50vh;
+    margin: 3rem auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.todo-title{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+.todo-insert{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+.todo-insert > input{ 
+    margin-left: 5%; 
+    border: none;
+    outline: none;
+    height: 100%;
+}
+.todo-insert > i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkviolet;
+    cursor: pointer;
+}
+.todo-list{
+    display: flex;
+    flex-direction: column;
+}
+.todo-list-title{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(40, 40, 40);
+    padding: 5px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.todo-item{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;    
+    margin: 0px auto 10px;
+    height: 40px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 5px;
+    transition: all .5s linear;
+    cursor: pointer;
+}
+.todo-item > input[type='checkbox']:checked + p{
+    text-decoration: line-through;
+}
+.todo-item input{
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.todo-item input:hover{
+    color: white;
+    background-color: red;
+}
+.todo-item p{
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+i{
+    cursor: pointer;
+}
+i:hover{
+    scale: 1.1;
+}

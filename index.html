@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List - Primeiro Todo List</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!---->
+    <!--APP-->
+    <script src="app.js" defer></script>
+    <!---->
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/8354f4af5c.js" crossorigin="anonymous"></script>
+    <!---->
+</head>
+<body>
+    <div class="container">
+        <div class="todo-title">
+            <h1>Todo List</h1>
+        </div>
+        <div class="todo-insert">
+            <input type="text" id='newItem' placeholder="Digite a tarefa que deseja criar">
+            <i id="iconNewItem" class="fa-solid fa-arrow-down-wide-short"></i>
+        </div>
+        <div class="todo-list-block">
+            <div class="todo-list-title">
+                <h2>Lista de Tarefas</h2>
+            </div>
+            <div class="todo-list" id="todoList">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
