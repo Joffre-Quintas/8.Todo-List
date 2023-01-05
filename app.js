@@ -79,6 +79,8 @@ const clickItem = (e) =>{
         atualizarStatus(indice)
     }
 }
+
+// Teste git
 // Passo 7
 document.getElementById('todoList').addEventListener('click', clickItem)
 
